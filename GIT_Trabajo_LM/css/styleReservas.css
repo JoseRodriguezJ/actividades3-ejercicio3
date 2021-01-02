@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    background-color: rgba(255, 0, 0, 0.521);
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: rgb(226, 70, 43);
+    padding: 16px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    width: 100vw;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+nav ul li:hover {
+    background-color: teal;
+}
+
+nav ul li {   
+    width: 20%;
+}
+
+header{
+    background-color: violet;
+    height: 200px;
+    /*background: url(../img/logo_provisional.png);*/
+}
+
+section{
+    background-color: yellow;
+    width: 100vw;
+    height: 60vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 16px;
+    margin-top: 10px;
+    max-width: 40vw;
+}
+
+label{
+    margin: 10px 0px;
+}
+
+.Botones{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 16px;
+}
+
+.Botones input{
+    
+    background-color: rgb(7, 158, 108);
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    background-color: rgb(130, 159, 238);
+    
+}
+
+footer{
+    background-color: yellowgreen;
+    text-align: center;
+}

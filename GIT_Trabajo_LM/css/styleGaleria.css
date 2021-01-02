@@ -1,0 +1,268 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes mianimacion {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    
+    
+}
+
+@media (max-width: 600px){
+
+}
+
+Paleta de colores
+#E84C0C Naranja
+#F22E0C Rojo
+#DB1616 Rojo F
+#F20C7F Rosa
+#E80CE8 Rosa F 
+
+/*Pricipal*/
+
+main{
+    display: flex;
+    flex-direction: column;  
+    max-width: 100vw;
+    min-height: 100vh;
+    
+}
+
+/*Encabezado*/
+
+header{
+    align-items: center;
+    background-color:#f22f0c9a;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    padding: 16px;
+    text-align: center;
+    
+}
+
+header img{
+    max-width: 20vw;
+    max-height: 20vh;
+    margin-right: 16px;
+    
+}
+header img:hover{
+    transform: rotate(-20deg);
+    
+}
+
+/*Panel de navegación*/
+
+nav{
+    align-items: center;    
+    display: flex;
+    justify-content: right;
+
+}
+
+/*Panel de navegación - Contenedor*/
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+/*Panel de navegación - Elementos*/
+
+nav ul li { 
+    margin: 1px;
+    font-size: 1vw;
+    justify-content: space-around;
+    padding: 16px;
+    color: white;
+    background-image: linear-gradient(-45deg, #f22f0c9a 0, #db1616b0 100%);
+    box-shadow: 0 10px 3px 0 rgba(14, 9, 73, 0.2),
+      0 19px 21px 0 rgba(255, 166, 220, 0.004);
+}
+
+nav ul li:hover {
+    
+    padding: 1rem 3rem;
+    margin: 1rem;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(-45deg, #db1616b0 0, #f22f0c9a 100%);
+    box-shadow: 0 10px 3px 0 rgba(14, 9, 73, 0.2),
+    0 19px 21px 0 rgba(255, 166, 220, 0.004);
+    transition: .7s linear;
+    
+     
+}
+
+.cir{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 10px 3px 0 rgba(14, 9, 73, 0.2),
+    0 19px 21px 0 rgba(255, 166, 220, 0.004);
+    animation: mianimacion 4s;
+    animation-iteration-count: infinite;
+}
+ 
+/*Estilo enlace*/
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+}
+
+/*Contendor Fotos*/
+
+.contenedorFotos{
+    display: flex;
+    background: url(../img/pngtree-pink-cherry-blossom-japanese-style-background-illustration-image_133894.jpg) no-repeat;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+/*Platos*/
+
+.plato{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Fotos*/
+
+.item{
+    margin: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    transition: all .2s ease-in-out;
+
+}
+
+.item:hover{
+    filter: grayscale(80%);
+    transform: scale(1.1);;
+
+}
+
+/*Dimensiones Fotos*/
+
+img{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25vw;
+    max-height: 500px;
+    
+}
+
+/*Encabezdo - Nuestra Carta */
+
+section h2{
+    margin: 16px 0px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*Seccioón de Fotos */
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #db1616b0;
+    
+}
+
+/*Seccioón de Fotos */
+
+
+
+/*Pie de página */
+
+footer{
+    
+    background-color:   #f22f0c9a;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.frase{
+    padding-top: 16px;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+}
+
+.pie {
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.pie p{
+    max-width: 30vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.pie p:nth-child(1){
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(1):hover{
+    background-color: #f20c7f6b;
+    border-radius: 16px;
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(2){
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(2):hover{
+    background-color: #f20c7f6b;
+    border-radius: 16px;
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(3){
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(3):hover{
+    font-weight: bold;
+    padding: 16px;
+}
+.pie p:nth-child(4){
+    font-weight: bold;
+    padding: 16px;
+}
+
+
+.pie p img{
+    border-radius: 60%;
+    max-width: 3vw;
+}
+.pie p img:hover{
+    box-shadow: 0 20px 3px 0 rgba(14, 9, 73, 0.2),
+    0 19px 21px 0 rgba(255, 166, 220, 0.004);
+    
+}
+
